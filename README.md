@@ -1,21 +1,15 @@
-# HermesToolAccumulation
+# Hermes Tool Accumulation Bug Demonstration
 
-**TODO: Add description**
+This repository demonstrates a bug in the [Hermes MCP library](https://github.com/cloudwalk/hermes-mcp) where tools are accumulated globally across all clients instead of being isolated per client session.
 
-## Installation
+## Running the Tests
 
-If [available in Hex](https://hex.pm/docs/publish), the package can be installed
-by adding `hermes_tool_accumulation` to your list of dependencies in `mix.exs`:
+To see the bug in action, run:
 
-```elixir
-def deps do
-  [
-    {:hermes_tool_accumulation, "~> 0.1.0"}
-  ]
-end
+```bash
+mix deps.get
+mix test
 ```
 
-Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_doc)
-and published on [HexDocs](https://hexdocs.pm). Once published, the docs can
-be found at <https://hexdocs.pm/hermes_tool_accumulation>.
+The test will demonstrate the tool accumulation behavior.
 
